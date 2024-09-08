@@ -1,0 +1,28 @@
+/*Rectangle area(no cla)*/
+class Rect_Area
+{
+public static void main(String args[])
+{
+Rectangle r1=new Rectangle();
+Rectangle r2=new Rectangle();
+r1.getData(5,10);
+r2.getData(7,3);
+int a1=r1.rectArea();
+int a2=r2.rectArea();
+System.out.println("area of 1st rectangle: "+a1);
+System.out.println("area of 2nd rectangle: "+a2);
+}
+}
+class Rectangle
+{
+int length,breadth;
+void getData(int x,int y)
+{
+length=x;
+breadth=y;
+}
+int rectArea()
+{
+return(length*breadth);
+}
+}

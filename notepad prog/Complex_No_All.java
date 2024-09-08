@@ -1,5 +1,5 @@
-/*complex no add mul sub cla*/
-class Complex
+/*complex no add mul sub div cla*/
+class Complex_All
 {
 float real,img;
 Complex()
@@ -29,8 +29,12 @@ void Mul(Complex c1,Complex c2)
 {
 System.out.println("mul result: ("+(c1.real*c2.real-c1.img*c2.img)+") + ("+(c1.real*c2.img+c1.img*c2.real)+")i");
 }
+void Div(Complex c1,Complex c2)
+{
+System.out.println("div result: ("+((c1.real*c2.real+c1.img*c2.img)/(c2.real*c2.real+c2.img*c2.img))+") + ("+((c1.img*c2.real-c1.real*c2.img)/(c2.real*c2.real+c2.img*c2.img))+")i");
 }
-class Complex_No
+}
+class Complex_No_All
 {
 public static void main(String args[])
 {
@@ -48,6 +52,7 @@ System.out.println("\n");
 cal.Sum(com1,com2);
 cal.Sub(com1,com2);
 cal.Mul(com1,com2);
+cal.Div(com1,com2);
 }
 }
 

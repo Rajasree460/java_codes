@@ -1,10 +1,12 @@
-/*method overloading without cla*/
-class Overloading
+/*method overloading using cla*/
+class Overloading_cla
 {
 public static void main(String args[])
 {
-Room r1=new Room(5,6);
-Room r2=new Room(5);
+int i=Integer.parseInt(args[0]);
+int j=Integer.parseInt(args[1]);
+Room r1=new Room(i,j);
+Room r2=new Room(i);
 //int a1=r1.rectArea();
 //int a2=r2.rectArea();
 System.out.println("area of rectangle: "+r1.Area());
